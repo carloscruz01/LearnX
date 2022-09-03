@@ -11,11 +11,12 @@ for c in range(repeticao):
             print('_______________________________________________')
             print(f"Valor em Solicitação:", '{}'.format(deposito))
             print(f'Valor aprovado com sucesso, depósito concluido!')
-            from datetime import datetime
-            data_tempo_real = datetime.now()
-            horario_tempo_real = 'Em desenvolvimento'
+            from datetime import date, datetime
+            data_tempo_real = date.today()
+            modificacao_data = data_tempo_real.strftime('%d/%m/%Y')
+            horario_tempo_real = datetime.time
             extratos_bancarios.append(deposito)
-            data_base_agora.append(data_tempo_real)
+            data_base_agora.append(modificacao_data)
             horario_base_agora.append(horario_tempo_real)
             print('_______________________________________________')
             print(f'Extrato Bancário:')
