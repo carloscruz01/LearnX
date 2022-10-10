@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Título page</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <form action="mailto:carlos@gmail.com" method="get" name="Formteste">
+        <fieldset>
+            <legend>Formulario</legend>
+            <label for="name">Nome:</label> 
+            <input type="text"  size="20" placeholder="Digite o seu nome"/>
+            <br/><br/>
+            <label for="em">E-mail: </label>
+            <input type="email" required id="em" name="email" placeholder="Digite o seu e-mail"/>
+            <br/>
+            <br/>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="\([0-9]\)\s[0-9]{4}-[0-9]{4}" placeholder="Digite o seu numero"/>
+            <div class="data">
+                <label for="data">Data:</label> 
+                <input type="number" size="2" placeholder="DD" min="1" max="31" /> /
+                <input type="number" size="2" placeholder="MM" min="1" max="12"/> /
+                <input type="number" size="2" placeholder="2022" min="2005" max="2022"/> 
+            </div>
+            <br>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Resetar"/>
+            <label for="site">Site: </label>
+            <input type="url" required id="site" name="site" placeholder="Digite a URL do site" />
+        </fieldset>
+        </form>
+        <div class="busca">
+            <form method="get"
+            action="https://google.com/search">
+            <fieldset>Google:
+            <input type="search" name="q" size="8" />
+            <input type="submit" value="buscar" />
+            </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
